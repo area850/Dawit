@@ -5,7 +5,7 @@ import simpleGit from "simple-git";
 const path = "./data.json";
 
 const data = {
-  date: moment().format()
+  date: moment().subtract(5, 'd').format()
 };
 
 jsonfile.writeFile(path, data, () => {
